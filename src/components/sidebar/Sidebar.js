@@ -20,7 +20,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           <i className="fa fa-home"></i>
           <a href="./Dashboard">Dashboard</a>
         </div>
-        <h2>Management</h2>
+        {/* <h2>Management</h2>
         <div className="sidebar__link">
           <i className="fa fa-user-secret"></i>
           <a href="./admin_Management">Admin Management</a>
@@ -70,7 +70,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className="sidebar__logout">
           <i className="fa fa-power-off"></i>
           <a href="./signout">Log out</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

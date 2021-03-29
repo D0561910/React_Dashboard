@@ -42,7 +42,7 @@ const Main = () => {
             <i className="fa fa-thumbs-up fa-2x text-green"></i>
             <div className="card_inner">
               <p className="text-primary-p">Number of Likes</p>
-              <span className="font-bold text-title">012</span>
+              <span className="font-bold text-title">12</span>
             </div>
           </div>
         </div>
@@ -70,22 +70,22 @@ const Main = () => {
                 <div className="charts__right__cards">
                     <div className="card1">
                         <h1>Income</h1>
-                        <p>$12,300</p>
+                        <p>$28,817</p>
                     </div>
 
                     <div className="card2">
-                        <h1>Sales</h1>
-                        <p>$123,400</p>
+                        <h1>Expense</h1>
+                        <p>$31,202</p>
                     </div>
 
                     <div className="card3">
-                        <h1>Users</h1>
-                        <p>123</p>
+                        <h1>School Fees</h1>
+                        <p>576,000</p>
                     </div>
 
                     <div className="card4">
-                        <h1>Orders</h1>
-                        <p>1881</p>
+                        <h1>Rent Fees</h1>
+                        <p>316,800</p>
                     </div>
                 </div>
             </div>

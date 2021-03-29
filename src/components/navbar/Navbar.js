@@ -1,5 +1,5 @@
 import "./Navbar.css";
-// import avatar
+import avatar from "../../images/avatar.png";
 
 const Navbar = ({ sidebarOpen, openSidebar }) => {
   return (
@@ -8,18 +8,21 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
         <i className="fa fa-bars"></i>
       </div>
       <div className="navbar__left">
-        <a href="./subscriber">Subscriber</a>
-        <a href="./video">Video</a>
+        {/* <a href="./subscriber">Subscriber</a>
+        <a href="./video">Video</a> */}
         <a className="active_link" href="./admin">
           Admin
         </a>
       </div>
       <div className="navbar__right">
-        <a href="./search">
+        <a href="/search">
           <i className="fa fa-search"></i>
         </a>
-        <a href="./history">
+        <a href="/history">
           <i className="fa fa-clock-o"></i>
+        </a>
+        <a href="/profile">
+          <img width="30" src={avatar} alt="avatar" />
         </a>
       </div>
     </nav>
