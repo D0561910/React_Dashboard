@@ -1,11 +1,15 @@
-import "./Sidebar.css";
+import "./sidebar.module.css";
 import logo from "../../images/panda.png";
+import classes from "./sidebar.module.css";
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
   return (
-    <div className={sidebarOpen ? "sidebar-responsive" : ""} id="sidebar">
-      <div className="sidebar__title">
-        <div className="sidebar__img">
+    <div
+      className={sidebarOpen ? classes.sidebar_responsive : ""}
+      id={classes.sidebar}
+    >
+      <div className={classes.sidebar__title}>
+        <div className={classes.sidebar__img}>
           <img src={logo} alt="logo" />
           <h1>Charles Blog</h1>
         </div>
@@ -15,10 +19,14 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
           onClick={() => closeSidebar()}
         ></i>
       </div>
-      <div className="sidebar__menu">
-        <div className="sidebar__link active_menu_link">
+      <div className={classes.sidebar__menu}>
+        <div className={`${classes.sidebar__link} ${classes.active_menu_link}`}>
           <i className="fa fa-home"></i>
           <a href="./Dashboard">Dashboard</a>
+        </div>
+        <div className={classes.sidebar__link}>
+          <i className="fa fa-user-secret"></i>
+          <a href="./company">Cryptocurrency</a>
         </div>
         {/* <h2>Management</h2>
         <div className="sidebar__link">
