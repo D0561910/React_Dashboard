@@ -20,13 +20,13 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         ></i>
       </div>
       <div className={classes.sidebar__menu}>
-        <div className={`${classes.sidebar__link} ${classes.active_menu_link}`}>
+        <div className={`${classes.sidebar__link}`}>
           <i className="fa fa-home"></i>
-          <a href="./Dashboard">Dashboard</a>
+          <a href="./">Dashboard</a>
         </div>
         <div className={classes.sidebar__link}>
           <i className="fa fa-user-secret"></i>
-          <a href="./company">Cryptocurrency</a>
+          <a href="./cryptocurrency">Cryptocurrency</a>
         </div>
         {/* <h2>Management</h2>
         <div className="sidebar__link">
