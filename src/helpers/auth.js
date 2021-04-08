@@ -1,8 +1,30 @@
-import { auth } from "../services/firebase";
+// import { auth } from "../services/firebase";
 
-const localhost_API = "http://localhost:8000/api/fakelogin";
+// export const signup = (email, password) => {
+//   return auth().createUserWithEmailAndPassword(email, password);
+// };
 
-// Post Method.
+// export const signin = (email, password) => {
+//   return auth().signInWithEmailAndPassword(email, password);
+// };
+
+// export const signInWithGoogle = () => {
+//   const provider = new auth.GoogleAuthProvider();
+//   return auth().signInWithPopup(provider);
+// };
+
+// export const signInWithGitHub = () => {
+//   const provider = new auth.GithubAuthProvider();
+//   return auth().signInWithPopup(provider);
+// };
+
+// export const logout = () => {
+//   return auth().signOut();
+// };
+
+// const localhost_API = "http://localhost:8000/api/fakelogin";
+
+// Post Method check response status.
 export const checkResponseStatus = (res) => {
   if (res.ok) {
     return res;
@@ -11,31 +33,9 @@ export const checkResponseStatus = (res) => {
   }
 };
 
-export const signup = (email, password) => {
-  return auth().createUserWithEmailAndPassword(email, password);
-};
-
-export const signin = (email, password) => {
-  return auth().signInWithEmailAndPassword(email, password);
-};
-
-export const signInWithGoogle = () => {
-  const provider = new auth.GoogleAuthProvider();
-  return auth().signInWithPopup(provider);
-};
-
-export const signInWithGitHub = () => {
-  const provider = new auth.GithubAuthProvider();
-  return auth().signInWithPopup(provider);
-};
-
-export const logout = () => {
-  return auth().signOut();
-};
-
-export const signInAPI = (email, password) => {
+export const signInAPI = (username, password) => {
   let user = {
-    email,
+    username,
     password,
   };
   return fetch(localhost_API, {

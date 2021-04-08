@@ -31,5 +31,5 @@ _redirects
 # gitignore
 .gitignore
 
-# sercives
-/sercives
+# services
+/services/firebase.js
