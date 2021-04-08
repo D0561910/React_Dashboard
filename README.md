@@ -1,14 +1,14 @@
 ## React Personal Dashboard
 
 [Demo](https://charles-dashboard.netlify.app/)\
-[範例](https://charles-dashboard.netlify.app/)\
+[範例](https://charles-dashboard.netlify.app/)
 
-Demo ID
-Username: admin
+Demo ID\
+Username: admin\
 Password: admin
 
-模擬帳號
-帳號: admin
+模擬帳號\
+帳號: admin\
 密碼: admin
 
 ## Available Scripts
