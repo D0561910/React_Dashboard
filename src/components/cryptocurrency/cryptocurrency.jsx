@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Coin from "../coin/coin";
+import Coin from "../coin/Coin";
 import classes from "./cryptocurrency.module.css";
 
 function Cryptocurrency() {

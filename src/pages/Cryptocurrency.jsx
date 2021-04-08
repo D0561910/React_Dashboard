@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/navbar/Navbar";
 import Sidebar from "../components/sidebar/Sidebar";
-import Cryptocurrency from "../components/cryptocurrency/cryptocurrency";
+import Cryptocurrency from "../components/cryptocurrency/Cryptocurrency";
 
 const CryptocurrencyPage = () => {
   const [sidebarOpen, setsidebarOpen] = useState(false);

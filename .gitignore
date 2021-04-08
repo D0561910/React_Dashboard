@@ -21,3 +21,15 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# create for react-router
+_redirects
+
+# netlify project
+.netlify
+
+# gitignore
+.gitignore
+
+# sercives
+/sercives

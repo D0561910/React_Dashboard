@@ -74,3 +74,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 [Youtube Link](https://www.youtube.com/watch?v=YBUwQMVK72U&t=151s)
 
 Still need to process is chart 
+
+### Deploy to netlify getting react-router-dom error
+[Solution](https://sschannak.medium.com/netlify-and-react-router-1537aebe6256)

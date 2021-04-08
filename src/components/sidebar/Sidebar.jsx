@@ -1,8 +1,24 @@
 import "./sidebar.module.css";
 import logo from "../../images/panda.png";
 import classes from "./sidebar.module.css";
+// Using Firebase.
+// import { logout } from "../../helpers/auth";
+// Using fake backend API
+import { signOutAPI } from "../../helpers/auth";
 
 const Sidebar = ({ sidebarOpen, closeSidebar }) => {
+  const handleLogout = async (event) => {
+    event.preventDefault();
+    try {
+      // Using firebase logout.
+      // await logout();
+      // Using backend API signout.
+      await signOutAPI();
+      window.location.href = "/";
+    } catch (err) {
+      console.error(err);
+    }
+  };
   return (
     <div
       className={sidebarOpen ? classes.sidebar_responsive : ""}
@@ -22,11 +38,17 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
       <div className={classes.sidebar__menu}>
         <div className={`${classes.sidebar__link}`}>
           <i className="fa fa-home"></i>
-          <a href="./">Dashboard</a>
+          <a href="./dashboard">Dashboard</a>
         </div>
         <div className={classes.sidebar__link}>
           <i className="fa fa-user-secret"></i>
           <a href="./cryptocurrency">Cryptocurrency</a>
+        </div>
+        <div className={classes.sidebar__logout}>
+          <i className="fa fa-power-off"></i>
+          <a href="#!" onClick={handleLogout}>
+            Log out
+          </a>
         </div>
         {/* <h2>Management</h2>
         <div className="sidebar__link">
@@ -74,10 +96,6 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
         <div className="sidebar__link">
           <i className="fa fa-briefcase"></i>
           <a href="./paygrade">Paygrade</a>
-        </div>
-        <div className="sidebar__logout">
-          <i className="fa fa-power-off"></i>
-          <a href="./signout">Log out</a>
         </div> */}
       </div>
     </div>
