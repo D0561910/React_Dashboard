@@ -4,9 +4,6 @@ const config = {
   // apiKey: "ADD-YOUR-DETAILS-HERE",
   // authDomain: "ADD-YOUR-DETAILS-HERE",
   // databaseURL: "ADD-YOUR-DETAILS-HERE",
-  apiKey: "",
-  authDomain: "",
-  databaseURL: "",
 };
 firebase.initializeApp(config);
 

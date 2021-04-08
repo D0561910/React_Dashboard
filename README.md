@@ -1,12 +1,21 @@
-# Getting Started with Create React App
+## React Personal Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Demo](https://charles-dashboard.netlify.app/)\
+[範例](https://charles-dashboard.netlify.app/)\
+
+Demo ID
+Username: admin
+Password: admin
+
+模擬帳號
+帳號: admin
+密碼: admin
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -14,12 +23,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
+### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -69,11 +73,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
 ### Learn from youtube
+
 [Youtube Link](https://www.youtube.com/watch?v=YBUwQMVK72U&t=151s)
 
-Still need to process is chart 
+Still need to process is chart
 
 ### Deploy to netlify getting react-router-dom error
+
 [Solution](https://sschannak.medium.com/netlify-and-react-router-1537aebe6256)

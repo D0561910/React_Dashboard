@@ -22,7 +22,7 @@
 //   return auth().signOut();
 // };
 
-// const localhost_API = "http://localhost:8000/api/fakelogin";
+const localhost_API = "http://localhost:8000/api/fakelogin";
 
 // Post Method check response status.
 export const checkResponseStatus = (res) => {
