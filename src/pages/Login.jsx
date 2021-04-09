@@ -1,9 +1,11 @@
 import { useState } from "react";
 
 // Using firebase
-// import { signin } from "../helpers/auth";
+// import { signin } from "../helpers/firebaseAuth";
 // USing fake backend API
-import { signInAPI, checkResponseStatus } from "../helpers/auth";
+import { signInAPI } from "../helpers/auth";
+import { setToken } from "../helpers/token";
+import { setUsername } from "../helpers/userInfo";
 import classes from "./login.module.css";
 
 // import images
@@ -35,10 +37,10 @@ const Login = () => {
       // window.location.href = "./dashboard";
       // Using backend API
       await signInAPI(userState.username, userState.password)
-        .then(checkResponseStatus)
         .then((response) => response.json())
         .then((result) => {
-          sessionStorage.setItem("dashobardToken", result.token);
+          setUsername(result.name);
+          setToken(result.token);
           window.location.href = "/dashboard";
         })
         .catch((err) => setError(`${err}`));

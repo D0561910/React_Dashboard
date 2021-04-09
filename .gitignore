@@ -32,4 +32,7 @@ _redirects
 .gitignore
 
 # services
-/services/firebase.js
+./services/firebase.js
+
+# .netlify
+.netlify

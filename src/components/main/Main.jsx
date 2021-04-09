@@ -1,6 +1,7 @@
 import "./main.module.css";
 import logo from "../../images/panda.png";
 import classes from "./main.module.css";
+import Charts from "../charts/Chart";
 
 const Main = () => {
   return (
@@ -57,7 +58,7 @@ const Main = () => {
               </div>
               <i className="fa fa-usd"></i>
             </div>
-            {/* <Charts/> */}
+            <Charts />
           </div>
 
           <div className={classes.charts__right}>

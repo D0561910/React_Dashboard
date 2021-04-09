@@ -1,31 +1,9 @@
-// import { auth } from "../services/firebase";
-
-// export const signup = (email, password) => {
-//   return auth().createUserWithEmailAndPassword(email, password);
-// };
-
-// export const signin = (email, password) => {
-//   return auth().signInWithEmailAndPassword(email, password);
-// };
-
-// export const signInWithGoogle = () => {
-//   const provider = new auth.GoogleAuthProvider();
-//   return auth().signInWithPopup(provider);
-// };
-
-// export const signInWithGitHub = () => {
-//   const provider = new auth.GithubAuthProvider();
-//   return auth().signInWithPopup(provider);
-// };
-
-// export const logout = () => {
-//   return auth().signOut();
-// };
-
-// const localhost_API = "http://localhost:8000/api/fakelogin";
+import { clearToken } from "./token";
+import { localhost_API } from "../constants/config";
+// import { API_URL } from "../constants/config";
 
 // Post Method check response status.
-export const checkResponseStatus = (res) => {
+const checkResponseStatus = (res) => {
   if (res.ok) {
     return res;
   } else {
@@ -38,13 +16,13 @@ export const signInAPI = (username, password) => {
     username,
     password,
   };
-  return fetch(localhost_API, {
+  return fetch(`${localhost_API}api/login`, {
     method: "POST",
     body: JSON.stringify(user),
     headers: { "Content-Type": "application/json" },
-  });
+  }).then(checkResponseStatus);
 };
 
 export const signOutAPI = () => {
-  sessionStorage.clear();
+  clearToken();
 };
